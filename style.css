@@ -1,0 +1,76 @@
+button,
+[type="submit"] {
+  background-color: hsl(18deg 100% 50%);
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover,
+[type="submit"]:hover {
+  background-color: hsl(18deg 100% 60%);
+}
+
+button:active,
+[type="submit"]:active {
+  transform: translate(-1px, 1px);
+  background-color: hsl(18deg 100% 50%);
+}
+
+.container {
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.container .form {
+  border-radius: 10px;
+  padding: 20px 7px;
+  background-color: #ccc;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container .form > :first-child {
+  width: 72%;
+  height: 40px;
+  border: none;
+  border-radius: 7px;
+  font-size: 25px;
+  padding: 0 3%;
+}
+
+.container .form > :last-child {
+  width: 15%;
+  border-radius: 7px;
+  font-size: 1em;
+}
+
+.container .tasks {
+  background-color: #ccc;
+  padding: 10px 20px;
+  border-radius: 7px;
+  margin-top: 30px;
+}
+
+.container .tasks .task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 0 10px;
+  border-radius: 7px;
+  margin: 15px 0;
+}
+
+.container .tasks .task h3 {
+  margin: 12px 0;
+  font-size: 25px;
+}
+
+.container .tasks .task > button {
+  border-radius: 7px;
+  padding: 3px 8px;
+  font-size: 15px;
+}
