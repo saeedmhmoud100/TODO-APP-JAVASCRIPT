@@ -14,6 +14,13 @@ function addTask() {
     task.appendChild(button);
     document.querySelector(".tasks").appendChild(task);
 
+    if (localStorage.tasks) {
+      let tasks = [localStorage["tasks"], text.value];
+      localStorage.tasks = tasks;
+    } else {
+      localStorage.tasks = text.value;
+    }
+    text.value = "";
   }
 }
 
